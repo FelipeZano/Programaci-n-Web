@@ -1,5 +1,10 @@
-body {background-color: Green;}
-#Id {color:blue;font-size: 100px}
-.clase{color: white;}
-.margenes{margin-top: 10px;}
+body {background-color: white;}
+#titulo {color:black;font-size: 70px}
+
+.bullets{
+    color: green; 
+    margin-left: 0px;
+    padding: 20px;
+}
+
 
