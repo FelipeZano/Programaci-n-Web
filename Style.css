@@ -1,40 +1,39 @@
 body {background-color: white;}
 /*{border: 1px solid black}*/
 
-*{
+
+*{ /*{Para que todo tenga margen 0}*/
     margin: 0;
 }
 
-#imagen{
-    width: 100%;
+@media screen and (min-width: 600px){
+    
+#Video-Planta{
+        width: 100%;
+        height: 750px;
+        object-fit: cover;
 }
 
-#Video{
-    width: 100%;
-    height: 750px;
-    object-fit: cover;
+#Video-Mar{
+    display: none;
 }
-
-
-
 
 #header{ 
     background-color: transparent;
 }
- 
 
-
-
-
-
+#boton { /*{De los que salen de la solapa}*/
+    color: white;
+}
 
 #titulo {
     color:white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-left: 20px; 
     font-size: 24px;
-    justify-content: start;
 }
+
+
 
 
 #botones {
@@ -46,48 +45,31 @@ body {background-color: white;}
 }
 
 #boton {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
     color: white;
-    background-color: beige;
-    padding: 0px 20px;
-    border-radius: 0px;
-    border: none;
-    cursor: pointer;
-
 }
 
 
-
+}
 @media only screen and (max-width: 600px) {
-    .header {
-        width: 100%;
-        display: none;
-        background-color: green;
-        height: 60px;
-        margin: 0px;
-        font-size: 0px;
-        align-items: center;
-        justify-content: space-between;
-        }
-        .boton {
-            color: Black;
-            background-color: rgb(82, 111, 140);
-            padding: 10px 20px;
-            border-radius: 20px;
-            border: none;
-            cursor: pointer;
-        
-        }
-    #headercelu{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        height: 50px;
-        align-items: center;
-        background-color: green;
+#header{ 
+        background-color: white;
+
     }
+    
+#titulo {
+        color:black;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-left: 10px; 
+        font-size: 24px;
+    }
+
+#Video-Mar{
+    width: 100%;
+    height: 750px;
+    object-fit: cover;
 }
 
-
+#Video-Planta{
+    display: none;
+}
+}
