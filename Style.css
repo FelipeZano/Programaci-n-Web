@@ -19,7 +19,7 @@ body {background-color: white;}
 }
 
 #header{ 
-    background-color: transparent;
+    background-color: white;
 }
 
 #boton { /*{De los que salen de la solapa}*/
@@ -27,7 +27,7 @@ body {background-color: white;}
 }
 
 #titulo {
-    color:white;
+    color:black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-left: 20px; 
     font-size: 24px;
@@ -48,8 +48,48 @@ body {background-color: white;}
     color: white;
 }
 
+#Letras-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: #f2f2f2;
+}
+
+#igAndWpp{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100px;
+    background-color: #f2f2f2 ;
+}
+
+
+.boton-whatsapp, .boton-instagram {
+    padding-right: 20px;
+    padding-left: 20px;
+    border: solid red 3px ;
+}
+  
+.boton-whatsapp a, .boton-instagram a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #7e469c;
 
 }
+  
+
+#Barralateral{
+    background-color: #44444b;
+}
+
+
+
+
 @media only screen and (max-width: 600px) {
 #header{ 
         background-color: white;
@@ -63,13 +103,52 @@ body {background-color: white;}
         font-size: 24px;
     }
 
-#Video-Mar{
+
+#boton {
+    color: white;
+}
+
+
+#Video-Planta{
     width: 100%;
     height: 750px;
     object-fit: cover;
 }
 
-#Video-Planta{
-    display: none;
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: #f2f2f2;
+  }
+  
+  .boton-whatsapp, .boton-instagram {
+    margin-right: 20px;
+  }
+  
+  .boton-whatsapp a, .boton-instagram a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #44444b;
+    color: #fff;
+  }
+  
+  .boton-instagram a {
+    background-color: #44444b;
+  }
+  
+  .fa-whatsapp, .fa-instagram {
+    font-size: 24px;
+  }
+
+  #Barralateral{
+    background-color: #44444b;
 }
+
+
 }
