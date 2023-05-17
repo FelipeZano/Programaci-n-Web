@@ -68,7 +68,7 @@ body {background-color: white;}
 .boton-whatsapp, .boton-instagram {
     padding-right: 20px;
     padding-left: 20px;
-    border: solid red 3px ;
+   /*border: solid red 3px ;*/
 }
   
 .boton-whatsapp a, .boton-instagram a {
@@ -78,7 +78,7 @@ body {background-color: white;}
     height: 50px;
     width: 50px;
     border-radius: 50%;
-    background-color: #7e469c;
+    background-color: #44444b;
 
 }
   
@@ -88,6 +88,7 @@ body {background-color: white;}
 }
 
 
+}
 
 
 @media only screen and (max-width: 600px) {
@@ -115,19 +116,33 @@ body {background-color: white;}
     object-fit: cover;
 }
 
-footer {
+#Letras-footer{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100px;
     background-color: #f2f2f2;
-  }
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+#igAndWpp{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100px;
+    background-color: #f2f2f2 ;
+}
+
+
+.boton-whatsapp, .boton-instagram {
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+   /*border: solid red 3px ;*/
+}
   
-  .boton-whatsapp, .boton-instagram {
-    margin-right: 20px;
-  }
-  
-  .boton-whatsapp a, .boton-instagram a {
+.boton-whatsapp a, .boton-instagram a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -135,20 +150,11 @@ footer {
     width: 50px;
     border-radius: 50%;
     background-color: #44444b;
-    color: #fff;
-  }
-  
-  .boton-instagram a {
-    background-color: #44444b;
-  }
-  
-  .fa-whatsapp, .fa-instagram {
-    font-size: 24px;
-  }
+
+}
 
   #Barralateral{
     background-color: #44444b;
 }
-
 
 }
