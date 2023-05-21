@@ -72,6 +72,7 @@ body {background-color: white;}
 }
   
 .boton-whatsapp a, .boton-instagram a {
+    margin-top: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,12 +82,36 @@ body {background-color: white;}
     background-color: #44444b;
 
 }
-  
+
 
 #Barralateral{
     background-color: #44444b;
+
+}
+  
+.usos{
+    padding: 25px;
+    margin: 0px;
+    width: 100%;
+    background-color: #44444b;
+    color:white;
+
 }
 
+.Tips{
+
+    padding: 25px;
+    margin: 0px;
+    width: 100%;
+}
+
+.Barramediana{
+
+    padding: 0px;
+    margin: 0px;
+
+
+}
 
 }
 
@@ -143,6 +168,7 @@ body {background-color: white;}
 }
   
 .boton-whatsapp a, .boton-instagram a {
+    margin-top: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -153,8 +179,32 @@ body {background-color: white;}
 
 }
 
-  #Barralateral{
+#Barralateral{
     background-color: #44444b;
+
+}
+
+.usos{
+    padding: 25px;
+    margin: 0px;
+    width: 100%;
+    background-color: #44444b;
+    color:white;
+
+}
+
+
+.Tips{
+
+    padding: 25px;
+    margin: 0px;
+    width: 100%;
+}
+
+.Barramediana{
+    padding: 0px;
+    margin: 0px;
+
 }
 
 }
