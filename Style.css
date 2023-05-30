@@ -14,9 +14,6 @@ body {background-color: white;}
         object-fit: cover;
 }
 
-#Video-Mar{
-    display: none;
-}
 
 #header{ 
     background-color: white;
@@ -89,7 +86,7 @@ body {background-color: white;}
 
 }
   
-.usos{
+#usos{
     padding: 25px;
     margin: 0px;
     width: 100%;
@@ -121,11 +118,19 @@ body {background-color: white;}
 }
 
 .Barramediana{
+    width: 100%;
     justify-content: start;
     padding: 0px;
-    margin: 0px;
+    margin-top: -1vh;
+}
 
-
+.Secciones{
+    display: grid;
+    flex-direction: row;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 }
@@ -152,7 +157,7 @@ body {background-color: white;}
 
 #Video-Planta{
     width: 100%;
-    height: 750px;
+    height: 7px;
     object-fit: cover;
 }
 
@@ -199,7 +204,7 @@ body {background-color: white;}
 
 }
 
-.usos{
+#usos{
     padding: 25px;
     margin: 0px;
     width: 100%;
@@ -209,17 +214,35 @@ body {background-color: white;}
 }
 
 
-.Tips{
 
-    padding: 25px;
-    margin: 0px;
-    width: 100%;
-}
 
 .Barramediana{
+    justify-content: start;
     padding: 0px;
-    margin: 0px;
-
+    margin-top: -1vh;
 }
+
+.Tips{
+    display: inline-block;
+    padding: 25px;
+    margin-top: 20px;
+    margin-left: 10px;
+    width: auto;
+    padding: 15px 15px;
+    border-radius: 25px;
+    background-color: #44444b;
+    color: #fff;
+    text-align: start;
+}
+
+.Aclraciones{
+    display: inline-block;
+    padding: 25px;
+    margin-top: 10px;
+    margin-left: 20px;
+    width: auto;
+    padding: 10px 20px;
+}
+
 
 }
