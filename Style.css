@@ -8,12 +8,23 @@ body {background-color: white;}
 
 @media screen and (min-width: 600px){
     
-#Video-Planta{
+.Video-Planta{
         width: 100%;
         height: 750px;
         object-fit: cover;
+        
 }
 
+#Carrousellpropio{
+    max-height: 750px;
+}
+
+#fotoscarrusell{
+    width: 100%;
+    height: 750px;
+    object-fit: cover;
+    
+}
 
 #header{ 
     background-color: white;
@@ -45,11 +56,18 @@ body {background-color: white;}
     color: white;
 }
 
+.contacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+}
+
 #Letras-footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
+    height: 50px;
     background-color: #f2f2f2;
 }
 
@@ -87,13 +105,38 @@ body {background-color: white;}
 }
   
 #usos{
-    padding: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 25px;
+    padding-left: 10px;
+    margin: 0px;
+    width: 100%;
+    background-color: #44444b;
+    color:white;
+}
+
+.usospalabra{
+    margin-left: 22px;
+    font-size: 24px;
+}
+
+#productos{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 25px;
+    padding-left: 10px;
     margin: 0px;
     width: 100%;
     background-color: #44444b;
     color:white;
 
 }
+
+.productospalabra{
+    margin-left: 22px;
+    font-size: 24px;
+}
+
 
 .Tips{
     display: inline-block;
@@ -125,13 +168,67 @@ body {background-color: white;}
 }
 
 .Secciones{
+    /*
     display: grid;
     flex-direction: row;
     grid-template-columns: auto auto auto;
     justify-content: space-evenly;
     margin-top: 25px;
     margin-bottom: 25px;
+    */
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
+
+.fotoscartas{
+    height: 400px;
+    /*
+    overflow: hidden;
+    object-fit: cover;
+    */
+}
+
+.contacto{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 20px;
+    padding-top: 10px;
+    margin-top: 10px;
+    background-color: #f2f2f2 ;
+}
+
+#href_usos{
+    position: absolute;
+    margin-top: -8vh;
+    color: transparent;
+    background-color: transparent;
+    width: 100%;
+    height: fit-content;
+
+}
+#href_productos{
+    position: absolute;
+    margin-top: -8vh;
+    color: transparent;
+    background-color: transparent;
+    width: 100%;
+    height: fit-content;
+
+}
+
+#href_contacto{
+    position: absolute;
+    margin-top: -7vh;
+    color: transparent;
+    background-color: transparent;
+    width: 100%;
+    height: fit-content;
+
+}
+
 
 }
 
@@ -155,11 +252,23 @@ body {background-color: white;}
 }
 
 
-#Video-Planta{
+.Video-Planta{
     width: 100%;
-    height: 7px;
+    height: 800px;
     object-fit: cover;
 }
+#fotoscarrusell{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    
+}
+
+#Carrousellpropio{
+    max-height: 600px;
+}
+
+
 
 #Letras-footer{
     display: flex;
@@ -213,7 +322,14 @@ body {background-color: white;}
 
 }
 
+#productos{
+    padding: 25px;
+    margin: 0px;
+    width: 100%;
+    background-color: #44444b;
+    color:white;
 
+}
 
 
 .Barramediana{
@@ -243,6 +359,67 @@ body {background-color: white;}
     width: auto;
     padding: 10px 20px;
 }
+
+.Secciones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+
+#cartitas{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.contacto{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 20px;
+    padding-top: 10px;
+    margin-top: 10px;
+    background-color: #f2f2f2 ;
+}
+
+#href_usos{
+    position: absolute;
+    margin-top: -7vh;
+    color: transparent;
+    background-color: transparent;
+    width: 100%;
+    height: fit-content;
+
+}
+#href_productos{
+    position: absolute;
+    margin-top: -7vh;
+    color: transparent;
+    background-color: transparent;
+    width: 100%;
+    height: fit-content;
+
+}
+
+#href_contacto{
+    position: absolute;
+    margin-top: -7vh;
+    color: transparent;
+    background-color: transparent;
+    width: 100%;
+    height: fit-content;
+
+}
+
 
 
 }

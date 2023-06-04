@@ -28,13 +28,13 @@
           <div id="Barralateral" class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
-                <a id="boton" class="nav-link active" aria-current="page" href="#">Nosotros</a>
+                <a id="boton" class="nav-link active" aria-current="page" href="#href_contacto">Contacto</a>
               </li>
               <li class="nav-item">
-               <a id="boton" class="nav-link active" aria-current="page" href="#usos_href">Usos</a>
+               <a id="boton" class="nav-link active" aria-current="page" href="#href_usos">Usos</a>
              </li>
              <li class="nav-item">
-               <a id="boton" class="nav-link active" aria-current="page" href="#">Productos</a>
+               <a id="boton" class="nav-link active" aria-current="page" href="#href_productos">Productos</a>
              </li>
           </div>
         </div>
@@ -43,51 +43,76 @@
 
 </header>
 
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+   <div id="Carrousellpropio" class="carousel-inner"> 
+     <div class="carousel-item active">
+      <video autoplay loop  muted plays-inline  class="Video-Planta" >
+         <source src="/Imagenes/pexels-pavel-danilyuk-4536571-1080x1920-30fps.mp4"type="video/mp4">
+      </video>   
+      
+    <div id="href_usos"><p>Invisible</p></div>
 
-<video autoplay loop  muted plays-inline  id="Video-Planta" >
-   <source src="/Imagenes/pexels-pavel-danilyuk-4536571-1080x1920-30fps.mp4"type="video/mp4">
-</video>
+     </div>
+     <div id="fotoscarrusell" class="carousel-item">
+       <img src="/Imagenes/spray.jpeg" id="ImagenesCarrusell" class="d-block w-100" alt="...">
+     </div>
+     <div id="fotoscarrusell" class="carousel-item">
+       <img src="/Imagenes/Smoked Lavender - Room Spray.jpeg" id="ImagenesCarrusell" class="d-block w-100" alt="...">
+     </div>
 
+   </div>
+   <div id="final-seccion"></div>
+   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+     <span class="visually-hidden">Previous</span>
+   </button>
+   <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+     <span class="carousel-control-next-icon" aria-hidden="true"></span>
+     <span class="visually-hidden">Next</span>
+   </button>
+ </div>
 
-
-
-<ul id="usos_href" class="Barramediana">
-   <div id="usos">U s o s</div>
-   <li class="Tips">Somos RUDA</li>
+<ul class="Barramediana">
+   <div id="usos">
+      <div class="usospalabra">U s o s </div>
+   </div>
+   <li class="Tips">Ambientes</li>
       <p class="Aclraciones">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus nemo repudiandae cumque quaerat, nam sequi recusandae consequuntur voluptatibus accusamus. Rerum doloremque nisi consequatur eum ipsam sapiente ut sequi amet adipisci.</p>
-   <li class="Tips">Ambientes Sanos</li>
+   <li class="Tips">Manos</li>
       <p class="Aclraciones">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus nemo repudiandae cumque quaerat, nam sequi recusandae consequuntur voluptatibus accusamus. Rerum doloremque nisi consequatur eum ipsam sapiente ut sequi amet adipisci.</p>
-   <li class="Tips">Naturaleza</li>
+   <li class="Tips">Nuevos</li>
       <p class="Aclraciones">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus nemo repudiandae cumque quaerat, nam sequi recusandae consequuntur voluptatibus accusamus. Rerum doloremque nisi consequatur eum ipsam sapiente ut sequi amet adipisci.</p>
 </ul>
+<div id="href_productos"><p>Invisible</p></div>
 
-<div id="usos" class="Barramediana">Productos
-   <p >Carrito: <span id="cantidadCarrito">0</span></p>
+<div id="productos" class="Barramediana">
+   <div class="productospalabra">P r o d u c t o s</div> 
 </div>
+
 <section class="Secciones">
-<div class="card" style="width: 18rem;">
-   <img src="/Imagenes/Smoked Lavender - Room Spray.jpeg" class="card-img-top" alt="...">
+<div id="cartitas" class="card" style="width: 18rem;">
+   <img class="fotoscartas" src="/Imagenes/Self-Care Massage - Ashley Neese.jpeg" class="card-img-top" alt="...">
    <div class="card-body">
-     <h5 class="card-title">Chuf</h5>
-     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+     <h5 class="card-title">Combo</h5>
+     <p class="card-text">Envase de 500ml, con todo lo que tiene ruda, en el formato que mas comodo te resulte</p>
      <button href="#cantidadCarrito" class="btn btn-primary">Agregar al carrito</button>
    </div>
  </div>
 
- <div class="card" style="width: 18rem;">
-   <img src="/Imagenes/How To Make DIY Essential Oil Linen Spray.jpeg" class="card-img-top" alt="...">
+ <div id="cartitas" class="card" style="width: 18rem;">
+   <img class="fotoscartas" src="/Imagenes/Saracatunga.jpeg" class="card-img-top" alt="...">
    <div class="card-body">
      <h5 class="card-title">Spray</h5>
-     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+     <p class="card-text">Envase de 350ml, con todo lo que tiene ruda, en el formato que mas comodo te resulte</p>
      <button href="#cantidadCarrito"  class="btn btn-primary">Agregar al carrito</button>
    </div>
  </div>
 
- <div class="card" style="width: 18rem;">
-   <img src="/Imagenes/DIY Beard Oil For Men.jpeg" class="card-img-top" alt="...">
+ <div id="cartitas" class="card" style="width: 18rem;">
+   <img class="fotoscartas" src="/Imagenes/How To Make Herbal Hydrosols.jpeg" class="card-img-top" alt="...">
    <div class="card-body">
      <h5 class="card-title">Gotero</h5>
-     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+     <p class="card-text">Envase de 100ml, con todo lo que tiene ruda, en el formato que mas comodo te resulte</p>
      <button href="#cantidadCarrito"  class="btn btn-primary">Agregar al carrito</button>
    </div>
  </div>
@@ -95,7 +120,8 @@
 </section>
 
 <footer>
-
+  <div id="href_contacto" ><p>Invisible</p></div>
+   <div class="contacto">Contacto y Redes</div>
    <div id="igAndWpp">
       <div class="boton-whatsapp">
          <a href="https://wa.me/1541723726"><svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
@@ -110,7 +136,6 @@
              </svg></a>
       </div>
    </div>
-
    
 <div id="Letras-footer">  
 <div>Todos los derechos reservados</div>

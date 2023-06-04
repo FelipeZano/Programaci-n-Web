@@ -33,9 +33,4 @@ console.log(array1.indexOf("Esteban"));
 
 //Find : Encuentra con conidciones
 
-let count = 0;
-
-const contador = [0]
-contador.push(1)
-
-//
+//While-->
