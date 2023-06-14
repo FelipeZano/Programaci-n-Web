@@ -56,11 +56,12 @@ body {background-color: white;}
     color: white;
 }
 
-.contacto{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f2f2f2;
+#contacto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        background-color:#f2f2f2;
 }
 
 #Letras-footer{
@@ -68,12 +69,14 @@ body {background-color: white;}
     justify-content: center;
     align-items: center;
     height: 50px;
-    background-color: #f2f2f2;
+    background-color:#f2f2f2;
 }
+
 
 #igAndWpp{
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100vw;
     height: 100px;
     background-color: #f2f2f2 ;
@@ -86,8 +89,9 @@ body {background-color: white;}
    /*border: solid red 3px ;*/
 }
   
+
 .boton-whatsapp a, .boton-instagram a {
-    margin-top: 40px;
+    margin-top: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -265,7 +269,7 @@ body {background-color: white;}
 }
 
 #Carrousellpropio{
-    max-height: 600px;
+    max-height: 550px;
 }
 
 
@@ -285,6 +289,7 @@ body {background-color: white;}
     justify-content: center;
     width: 100vw;
     height: 100px;
+    margin-bottom: -3vh;
     background-color: #f2f2f2 ;
 }
 
@@ -419,7 +424,5 @@ body {background-color: white;}
     height: fit-content;
 
 }
-
-
 
 }

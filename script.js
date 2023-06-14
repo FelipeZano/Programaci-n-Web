@@ -34,3 +34,11 @@ console.log(array1.indexOf("Esteban"));
 //Find : Encuentra con conidciones
 
 //While-->
+const combo=["Combo", "250$", 400, 1]
+const spray=["Spray", "250$", 300, 1]
+const gotero=["Gotero", "250$", 200, 1]
+
+
+
+
+ 
