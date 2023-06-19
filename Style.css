@@ -256,6 +256,13 @@ button {
     display: flex;
 }
 
+.producto{
+    max-width: 20%;
+    padding: 10PX;
+    margin: 10px;
+    margin-bottom: 20px;
+    box-shadow: 2px 6pc 3px 3px white;
+}
 
 
 }

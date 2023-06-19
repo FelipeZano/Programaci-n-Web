@@ -101,17 +101,25 @@ BotonSuma.addEventListener("click", BotonesSuma)
 // Segundo intento carrito 
 
 let Productos=[
-    {id:1, nombre: Combo, cantidad: 1, precio:400},
-    {id:2, nombre: Spray, cantidad: 1, precio:300},
-    {id:3, nombre: Gotero, cantidad: 1, precio:200},
+    {id:1, nombre: "Combo", cantidad: 1,descripcion: "La fragancia impregnada en el aire transporta tus sentidos a un estado de plenitud, mientras los aromas sutiles y embriagadores dan vida a cada rincón cada espacio, cada ambiente de tu casa refrescado por ruda. ", precio:400, img:`/Imagenes/Self-Care Massage - Ashley Neese.jpeg`},
+    {id:2, nombre: "Spray", cantidad: 1,descripcion: "La higiene de manos con alcohol se convierte en un ritual indispensable para proteger tu salud. Elimina eficazmente los gérmenes y brinda una sensación de limpieza y frescura.", precio:300, img:`/Imagenes/Saracatunga.jpeg`},
+    {id:3, nombre: "Gotero", cantidad: 1,descripcion: "Libertad y pureza energética se fusionan en un equilibrio perfecto. Experimenta la sensación de armonía y bienestar al liberar las cargas negativas y permitir que la energía positiva fluya libremente en tus ambientes.", precio:200, img:`/Imagenes/How To Make Herbal Hydrosols.jpeg`},
 ]
 
-function Agregaralcarrito(){
-
-
-
-}
 
 const ContenedorCarrito = document.getElementById("ContenedorCarrito")
 
+Productos.forEach((producto)=>{
 
+    const div =document.createElement("div")
+    div.classList.add("producto")
+    div.innerHTML=`
+    <img src=${producto.img} alt= "">
+    <h3>${producto.nombre}</h3>
+    <p>${producto.descripcion}</p>
+    <p class="">Precio:$ ${producto.precio}</p>
+    <button id="agregar${producto.id}" class="" >Agregar <i class=""></i></button>
+
+    `
+    ContenedorCarrito.appendChild(div)
+})
