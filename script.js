@@ -2,6 +2,8 @@
 
 /*Arreis van siempre en Mayuscula  se hacen en const y se pueden modificar igual*/
 
+console.log("¡El archivo JavaScript está conectado correctamente!");
+
 
 console.log("Hola")
 let array1 = [1,2,3]
@@ -38,7 +40,7 @@ console.log(array1.indexOf("Esteban"));
 //Hasta aca son apuntes de clase-->
 
 // Desde aca hay u intento de generar elsubtotal
-
+/*
 const PrecioCombo=[400]
 const PrecioSpray=[300]
 const PrecioGotero=[200]
@@ -56,13 +58,16 @@ function actualizarSubtotal() {
 
     let Subtotal1 = [(PrecioCombo * CantidadCombo) + (PrecioSpray * CantidadSpray) + (PrecioGotero * CantidadGotero)];
 
-    //document.querySelector("Subtotal").innerHTML= Subtotal1
-    //  Subtotal.textContent = Subtotal1;
+    document.querySelector("Subtotal").innerHTML= Subtotal1
+    Subtotal.textContent = Subtotal1;
 }
 
 actualizarSubtotal()
 
+*/
+
 // Haasta aca hay u intento de generar el subtotal
+
 
 
 // Desde Aca le voy a dar funcion a los botones 
@@ -70,23 +75,43 @@ actualizarSubtotal()
 
 
 //Declaración de variables para el aumento
+/*document.getElementById("cantidadcombo").innerHTML= 800;
+
 const BotonSuma = document.getElementById("BotonSuma");
-const CantCombo = document.getElementById("CantCombo");
+let Cantidadcombo = document.getElementById("cantidadcombo");
 
 let contador = 0 
 
 function BotonesSuma(){
 
     contador++;
-    CantCombo.textContent = contador
-
+document.querySelector("cantidadcombo").innerHTML= contador;
+    cantidadcombo.textContent = contador;
 }
-
-BotonesSuma()
-
 
 BotonSuma.addEventListener("click", BotonesSuma)
 
 
+*/
+
 // HastaAca le voy a dar funcion a los botones 
 //para que varien las canrtidades en la pagina
+
+
+// Segundo intento carrito 
+
+let Productos=[
+    {id:1, nombre: Combo, cantidad: 1, precio:400},
+    {id:2, nombre: Spray, cantidad: 1, precio:300},
+    {id:3, nombre: Gotero, cantidad: 1, precio:200},
+]
+
+function Agregaralcarrito(){
+
+
+
+}
+
+const ContenedorCarrito = document.getElementById("ContenedorCarrito")
+
+
