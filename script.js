@@ -1,7 +1,7 @@
 /*Indice mas alto = 2 osea que total de elementos es 3 */ 
 
 /*Arreis van siempre en Mayuscula  se hacen en const y se pueden modificar igual*/
-
+/*
 console.log("¡El archivo JavaScript está conectado correctamente!");
 
 
@@ -100,6 +100,8 @@ BotonSuma.addEventListener("click", BotonesSuma)
 
 // Segundo intento carrito 
 
+
+
 let Productos=[
     {id:1, nombre: "Combo", cantidad: 1,descripcion: "Envase de 500ml, con todo lo que tiene ruda, en el formato que mas comodo te resulte", precio:400, img:`/Imagenes/whatafak.jpeg`},
     {id:2, nombre: "Spray", cantidad: 1,descripcion: "Envase de 350ml, con todo lo que tiene ruda, en el formato que mas comodo te resulte", precio:300, img:`/Imagenes/Saracatunga.jpeg`},
@@ -108,6 +110,8 @@ let Productos=[
 
 
 const ContenedorCarrito = document.getElementById("ContenedorCarrito")
+
+const CarritoSolapa = document.getElementById("CarritoSolapa")
 
 let carrito=[]
 
@@ -120,20 +124,94 @@ Productos.forEach((producto)=>{
     <h3 class="card-title" >${producto.nombre}</h3>
     <p class="card-text">${producto.descripcion}</p>
     <p class="card-text">Precio:$ ${producto.precio}</p>
-    <button id="agregar${producto.id}" class="btn btn-primary" >Agregar al Carrito <i class=""></i></button>
+    <button id="agregar${producto.id}" class="btn btn-primary" >Agregar al Carrito <i ></i></button>
 
     `
+    
     ContenedorCarrito.appendChild(div)
-    
-    const boton = document.getElementById("agregar${producto.id}");
-    
-    boton.addEventListener("click", ()=> {
+
+    const Botoncitoagregado = document.getElementById(`agregar${producto.id}`);
+
+    Botoncitoagregado.addEventListener(`click`, () => {
         AgregadoalCarrito(producto.id)
-    })
+})
     
 })
 
-const AgregadoalCarrito =(productoid) => {
-    const item = Productos.find((producto)  => prod.id ===productoid)
-    carrito.push(item)
+
+
+const AgregadoalCarrito = (prodId) => {
+
+        const existe = carrito.some (prod => prod.id === prodId)
+        if (existe){
+            const prod = carrito.map (prod => {
+                if (prod.id === prodId){
+                    prod.cantidad++
+                }
+            })
+        } else {
+            const item = Productos.find((prod)  => prod.id === prodId)
+            carrito.push(item)
+        }
+
+        ActualizarCarrito() 
 }
+    
+    
+
+
+const ActualizarCarrito = () => {
+
+    CarritoSolapa.innerHTML=""
+
+    carrito.forEach((prod) => {
+        const div = document.createElement("div")
+        div.className = ("ProductoenCarrito")
+        div.innerHTML=`
+        <p>${prod.nombre}</p>
+        <p>$${prod.precio}</p>
+        <p>Cantidad: <span id="cantidad">${prod.cantidad}</span></p>
+        <button class="boton-eliminar"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
+        <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z"/>
+      </svg></button>
+        `
+        const botonEliminar = div.querySelector(".boton-eliminar");
+        botonEliminar.addEventListener("click", () => eliminarDelCarrito(prod.id));
+
+        CarritoSolapa.appendChild(div);
+
+    })
+    PrecioTotal.innerText = carrito.reduce((acc,prod)=> acc+(prod.precio*(prod.cantidad)),0)
+    alert(CarritoTexto)
+}
+const eliminarDelCarrito = (prodId) => {
+    const item =carrito.find((producto) => producto.id === parseInt(prodId))
+    const indice=carrito.indexOf(item)
+    carrito.splice(indice,1)
+    ActualizarCarrito()
+}
+
+const BotonVaciar = document.getElementById("Vacio")
+BotonVaciar.addEventListener(`click`, () => {
+
+    carrito.length=0
+    PrecioTotal.innerHTML=0
+    ActualizarCarrito()
+
+})
+
+
+    
+const PrecioTotal= document.getElementById("Precio Total:")
+
+
+const BotonPedido = document.createElement("button");
+BotonPedido.textContent = "Hacer Pedido";
+BotonPedido.addEventListener("click", () => {
+  const enlaceWhatsApp = `https://wa.me/1551588858?text=Hola Ruda,¡quiero hacer un pedido!`;
+  window.open(enlaceWhatsApp);
+});
+
+const contenedor = document.getElementById("Pedido");
+contenedor.appendChild(BotonPedido);
+

@@ -1,5 +1,4 @@
 body {background-color: white;}
-/*{border: 1px solid black}*/
 
 
 *{ /*{Para que todo tenga margen 0}*/
@@ -273,6 +272,34 @@ button {
 
   }
 
+  .ProductoenCarrito {
+    border-left: 5px solid green;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    margin: 5px 0px;
+    padding: 5px 5px ;
+    padding-bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.boton-eliminar {
+    background-color: #44444b;
+    color: rgb(186, 53, 53);
+    border: none;
+    font-size: 40px;
+    align-items: center;
+    padding-bottom: 25px;
+}
+
+
+.Espacio{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
 
 
 }
@@ -518,5 +545,38 @@ button {
 
   }
 
+
+.ProductoenCarrito {
+    border-left: 5px solid green;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    margin: 5px 0px;
+    padding: 5px 5px ;
+    padding-bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+
+.boton-eliminar {
+    background-color: #44444b;
+    color: rgb(186, 53, 53);
+    border: none;
+    font-size: 40px;
+    align-items: center;
+    padding-bottom: 25px;
+}
+
+.Espacio{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.BotonPedido{
+    background-color: #4caf50;
+}
 
 }
